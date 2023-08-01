@@ -1,0 +1,27 @@
+{
+    "rules": [
+        {
+            "name": "rule1",
+            "predicate": "All",
+            "conditions": [
+                {
+                    "field": "from",
+                    "operator": "contains",
+                    "value": "ET Prime: Today's Edition"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_unread"
+                },
+                {
+                    "type": "archive"
+                },
+                {
+                    "type": "add_label",
+                    "value": "test"
+                }
+            ]
+        }
+    ]
+}
