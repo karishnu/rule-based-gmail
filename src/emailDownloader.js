@@ -1,6 +1,6 @@
 const { google } = require('googleapis');
 const { authorize } = require('./auth');
-const Email = require('./models/email');
+const Email = require('../models/email');
 
 function getMessageData(message) {
     if (message.data.payload.parts) {

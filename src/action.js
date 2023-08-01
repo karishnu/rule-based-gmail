@@ -1,7 +1,7 @@
 const fs = require('fs');
 const rules = JSON.parse(fs.readFileSync('rules.json')).rules;
 const { authorize } = require('./auth');
-const Email = require('./models/email');
+const Email = require('../models/email');
 const { google } = require('googleapis');
 
 let gmail;
